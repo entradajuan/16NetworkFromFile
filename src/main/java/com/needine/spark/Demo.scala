@@ -43,12 +43,13 @@ object Demo {
   
   def main(args: Array[String]) = {
     
+    /*
     val conf = new SparkConf()
       .setAppName("Network Analysis V0.1 ")
       .setMaster("local")      
     val sc = new SparkContext(conf)
-    
-    //val sc = new SparkContext(new SparkConf())
+    */
+    val sc = new SparkContext(new SparkConf())
     
     val rawData = sc.textFile("/home/hduser/Documents/ml/networking/KDD99/kddcup.data.corrected")
     
